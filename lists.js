@@ -16,6 +16,8 @@ console.log(myStuff.length);
 
 insertItem(myStuff, 1, "dog");
 
+removeItem(myStuff, 0);
+
 console.log(myStuff);
 
 
@@ -41,7 +43,7 @@ function appendItem(_a, _item) {
 }
 
 function removeItem(_a, _i) {
-	if (_i >= _a.length || _i === 0) {
+	if (_i >= _a.length || _i < 0) {
 		console.log("Index out of range.");
 		return
 	}
@@ -54,7 +56,7 @@ function removeItem(_a, _i) {
 }
 
 function insertItem(_a, _i, _item) {
-	if (_i >= _a.length || _i === 0) {
+	if (_i >= _a.length || _i < 0) {
 		console.log("Index out of range.");
 		return
 	}
