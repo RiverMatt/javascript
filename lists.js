@@ -1,4 +1,6 @@
 
+/* Setting up a list and running some functions on it */
+
 var myStuff = [20, "hat", "pow", 5];
 myStuff[1] = "cat";
 myStuff[2] = myStuff[1];
@@ -21,13 +23,13 @@ removeItem(myStuff, 0);
 console.log(myStuff);
 
 
-/*
-var myStuff = ["dog","cat",3,10];
-myStuff[2-1] = "tree";
-myStuff[myStuff[2]] = myStuff[0];
-console.log(myStuff);
-*/
-/*
+
+var bList = ["dog","cat",3,10];
+bList[2-1] = "tree";
+bList[myStuff[2]] = bList[0];
+console.log(bList);
+
+
 var aList = [20,"hat","pow"];
 appendItem(aList, 5);
 appendItem(aList, 10);
@@ -35,7 +37,11 @@ removeItem(aList, 1);
 insertItem(aList, 2, "bang");
 
 console.log(aList);
-*/
+
+
+//-----------------------------------------------------------------------------
+/* Functions */
+//-----------------------------------------------------------------------------
 
 function appendItem(_a, _item) {
 	_a.length = _a.length+1;
@@ -73,7 +79,10 @@ function insertItem(_a, _i, _item) {
 	
 }
 
-// this function is redundant with built in array.length function
+//-----------------------------------------------------------------------------
+/* This function is redundant with built in array.length function */
+//-----------------------------------------------------------------------------
+
 function length(_a) {
 	var count = 0;
 	while (_a[count] != null) {
