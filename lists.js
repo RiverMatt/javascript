@@ -85,7 +85,7 @@ function insertItem(_a, _i, _item) {
 /* This function is redundant with built in array.length function */
 /*------------------------------------------------------------------------*/
 
-function length(_a) {
+function getLength(_a) {
 	var count = 0;
 	while (_a[count] != null) {
 		count++;
