@@ -10,7 +10,7 @@ myStuff[0] = myStuff[3] + 10;
 myStuff[3] = myStuff[0] + myStuff[0];
 
 
-console.log(length(myStuff));
+console.log(myStuff.length);
 appendItem(myStuff, "test");
 console.log(myStuff.length);
 
