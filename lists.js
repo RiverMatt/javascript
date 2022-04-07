@@ -76,9 +76,7 @@ function insertItem(_a, _i, _item) {
 		_a[count] = _a[count-1];
 		count--;
 	}
-
 	_a[_i] = _item;
-	
 }
 
 /*------------------------------------------------------------------------*/
@@ -90,6 +88,5 @@ function getLength(_a) {
 	while (_a[count] != null) {
 		count++;
 	}
-
 	return count;
 }
