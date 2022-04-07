@@ -10,13 +10,13 @@ myStuff[0] = myStuff[3] + 10;
 myStuff[3] = myStuff[0] + myStuff[0];
 
 
-console.log(myStuff.length);
+console.log("Length of myStuff: " + myStuff.length);
 appendItem(myStuff, "test");
-console.log(myStuff.length);
+console.log("Length of myStuff: " + myStuff.length);
 
 console.log(myStuff);
 removeItem(myStuff, 3);
-console.log(myStuff.length);
+console.log("Length of myStuff: " + myStuff.length);
 
 insertItem(myStuff, 1, "dog");
 
